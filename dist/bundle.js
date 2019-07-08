@@ -90,11 +90,11 @@
 /*!*********************************!*\
   !*** ./src/algorithms/index.js ***!
   \*********************************/
-/*! no static exports found */
+/*! exports provided: bubbleSort */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sort */ \"./src/algorithms/sort/index.js\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _sort__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _sort__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n\n\n//# sourceURL=webpack:///./src/algorithms/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sort */ \"./src/algorithms/sort/index.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"bubbleSort\", function() { return _sort__WEBPACK_IMPORTED_MODULE_0__[\"bubbleSort\"]; });\n\n\n\n//# sourceURL=webpack:///./src/algorithms/index.js?");
 
 /***/ }),
 
@@ -114,7 +114,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!**************************************!*\
   !*** ./src/algorithms/sort/index.js ***!
   \**************************************/
-/*! no static exports found */
+/*! exports provided: bubbleSort */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -126,11 +126,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bub
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
+/*! exports provided: bubbleSort */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _algorithms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./algorithms */ \"./src/algorithms/index.js\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _algorithms__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _algorithms__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _algorithms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./algorithms */ \"./src/algorithms/index.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"bubbleSort\", function() { return _algorithms__WEBPACK_IMPORTED_MODULE_0__[\"bubbleSort\"]; });\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

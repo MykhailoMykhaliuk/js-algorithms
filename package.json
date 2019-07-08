@@ -4,7 +4,7 @@
   "description": "Classic algorithms and data structures implemented in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,8 @@
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.2",
     "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.8.0",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
   }
