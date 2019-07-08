@@ -102,10 +102,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sor
 /*!***************************************!*\
   !*** ./src/algorithms/sort/bubble.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: bubbleSort */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/algorithms/sort/bubble.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"bubbleSort\", function() { return bubbleSort; });\nfunction bubbleSort(array) {\n  for (var i = 0; i < array.length; i++) {\n    for (var j = 0; j < array.length; j++) {\n      if (array[j] > array[j + 1]) {\n        var tmp = array[j];\n        array[j] = array[j + 1];\n        array[j + 1] = tmp;\n      }\n    }\n  }\n\n  return array;\n}\n;\n\n//# sourceURL=webpack:///./src/algorithms/sort/bubble.js?");
 
 /***/ }),
 
@@ -117,7 +118,7 @@ eval("\n\n//# sourceURL=webpack:///./src/algorithms/sort/bubble.js?");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bubble__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bubble */ \"./src/algorithms/sort/bubble.js\");\n/* harmony import */ var _bubble__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_bubble__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _bubble__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _bubble__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n\n\n//# sourceURL=webpack:///./src/algorithms/sort/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bubble__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bubble */ \"./src/algorithms/sort/bubble.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"bubbleSort\", function() { return _bubble__WEBPACK_IMPORTED_MODULE_0__[\"bubbleSort\"]; });\n\n\n\n//# sourceURL=webpack:///./src/algorithms/sort/index.js?");
 
 /***/ }),
 
