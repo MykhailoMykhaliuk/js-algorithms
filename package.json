@@ -4,6 +4,7 @@
   "description": "Classic algorithms and data structures implemented in JavaScript",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "test": "jest"
   },
   "repository": {
