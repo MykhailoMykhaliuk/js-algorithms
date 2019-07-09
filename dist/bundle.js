@@ -118,7 +118,19 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _bubble = __webpack_require__(/*! ./bubble */ \"./src/algorithms/sort/bubble.js\");\n\nObject.keys(_bubble).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _bubble[key];\n    }\n  });\n});\n\nvar _selection = __webpack_require__(/*! ./selection */ \"./src/algorithms/sort/selection.js\");\n\nObject.keys(_selection).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _selection[key];\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/algorithms/sort/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _bubble = __webpack_require__(/*! ./bubble */ \"./src/algorithms/sort/bubble.js\");\n\nObject.keys(_bubble).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _bubble[key];\n    }\n  });\n});\n\nvar _selection = __webpack_require__(/*! ./selection */ \"./src/algorithms/sort/selection.js\");\n\nObject.keys(_selection).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _selection[key];\n    }\n  });\n});\n\nvar _merge = __webpack_require__(/*! ./merge */ \"./src/algorithms/sort/merge.js\");\n\nObject.keys(_merge).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _merge[key];\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/algorithms/sort/index.js?");
+
+/***/ }),
+
+/***/ "./src/algorithms/sort/merge.js":
+/*!**************************************!*\
+  !*** ./src/algorithms/sort/merge.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.mergeSort = mergeSort;\n\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance\"); }\n\nfunction _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }\n\nfunction mergeSort(array) {\n  if (array.length < 2) {\n    return array;\n  }\n\n  var middlePointer = Math.floor(array.length / 2);\n  var leftPart = array.slice(0, middlePointer);\n  var rightPart = array.slice(middlePointer);\n  return merge(mergeSort(leftPart), mergeSort(rightPart));\n}\n\nfunction merge(leftPart, rightPart) {\n  var result = [];\n  var leftPointer = 0;\n  var rightPointer = 0;\n\n  while (leftPointer < leftPart.length && rightPointer < rightPart.length) {\n    if (leftPart[leftPointer] < rightPart[rightPointer]) {\n      result.push(leftPart[leftPointer]);\n      leftPointer++;\n    } else {\n      result.push(rightPart[rightPointer]);\n      rightPointer++;\n    }\n  }\n\n  return [].concat(result, _toConsumableArray(leftPart.slice(leftPointer)), _toConsumableArray(rightPart.slice(rightPointer)));\n}\n\n//# sourceURL=webpack:///./src/algorithms/sort/merge.js?");
 
 /***/ }),
 
