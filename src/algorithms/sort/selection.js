@@ -1,5 +1,3 @@
-import { swap } from '../../utils';
-
 export function selectionSort(array) {
   const length = array.length;
   for (let i = 0; i < length; i++){ 
@@ -9,7 +7,7 @@ export function selectionSort(array) {
         indexOfMinElement = j;
       }
     }
-    swap(array, i, indexOfMinElement);
+    [array[i], array[indexOfMinElement]] = [array[indexOfMinElement], array[i]]
   }
   return array;
 }
